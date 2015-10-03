@@ -22,6 +22,10 @@
       <object>objects\obj_generate</object>
       <object>objects\obj_difficulty</object>
       <object>objects\obj_sound_survive</object>
+      <object>objects\obj_check</object>
+    </objects>
+    <objects name="Blocks">
+      <object>objects\obj_player</object>
     </objects>
   </objects>
   <rooms name="rooms">

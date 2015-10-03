@@ -2,7 +2,7 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -25,23 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room == room_survival {
-    if global.casual == true {
-        alarm[0] = 45;
-    } else if global.moderate == true {
-        alarm[0] = 30;
-    } else if global.hard == true {
-        alarm[0] = 15;
-    }
-    
-    alarm[1] = 60;
-    alarm[2] = 150;
-    
-} else if room == room_timed {
-    alarm[0] = 15;
-    alarm[1] = 30;
-    alarm[2] = 60;
+            <string>if global.casual = true{
+    alarm[0] = 60;
+}else if global.moderate = true{
+    alarm[0] = 45
+}else if global.hard{
+    alarm[0] = 30
 }
+
+    alarm[1] = 120;
+    alarm[2] = 360;
 </string>
           </argument>
         </arguments>
@@ -64,26 +57,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Generate the Player
-//Get X and Y coords and checks for object
-posx = floor(random(20))*32;
+            <string>posx = floor(random(20))*32;
 posy = floor(random(15))*32;
+
 locate = instance_position(posx, posy, all);
-//If no object spawn player
 if(locate = noone) {
     instance_create(posx, posy, choose(obj_player));
-}
-//Reset the Alarm for survival mode
-if room == room_survival{    
-    alarm[2] = 150;
-    if alarm[0] &gt; 1 {
-    alarm[0] -= 1;
     }
-}
-//Reset the Alarm for timed mode
-if room == room_timed{
-    alarm[2] = 60;
-}
+alarm[2] = 360;
+alarm[0] -= 1
 </string>
           </argument>
         </arguments>
@@ -106,21 +88,14 @@ if room == room_timed{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Generate the x-launcher and bombs
-//Get X and Y coords then check if something is there
-posx = floor(random(20))*32;
+            <string>posx = floor(random(20))*32;
 posy = floor(random(15))*32;
+
 locate = instance_position(posx, posy, all);
-//If nothing is there, create either x-launcehr or bomb
 if(locate = noone) {
     instance_create(posx, posy, choose(obj_xlauncher,obj_bomb));
-}
-//Reset the Alarm for survival and timed mode    
-if room == room_survival{    
-    alarm[1] = 120;
-} else if room == room_timed{
-    alarm[1] = 60;
-}
+    }
+alarm[1] = 120;
 </string>
           </argument>
         </arguments>
@@ -143,29 +118,14 @@ if room == room_survival{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Generate either enemies or blocks
-//Create x and y variables and check if anything is there
-posx = floor(random(20))*32;
+            <string>posx = floor(random(20))*32;
 posy = floor(random(15))*32;
-locate = instance_position(posx, pozy, all);
-//If x and y position is empty, spawn an object
+
+locate = instance_position(posx, posy, all);
 if(locate = noone) {
-    instance_create(posx, posy, choose(obj_enemy, obj_block));
-}
-//Reset the Alarm in survival mode
-if room == room_survival {
-    if global.casual == treu {
-        alarm[0] = 45;
-    } else if global.moderate == true {
-        alarm[0] = 30;
-    } else if global.hard == true {
-        alarm[0] = 15;
+    instance_create(posx, posy, choose(obj_enemy,obj_block));
     }
-}
-//Reset the Alarm in timed mode
-if room == room_timed {
-    alarm[0] = 30;
-}
+alarm[0] = 60;
 </string>
           </argument>
         </arguments>
