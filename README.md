@@ -6,7 +6,7 @@ Until I finish porting all of the old code, please don't pull requests.
 I would greatly appreciate your help with art and code once I finish porting everything.
 
 Phase 1 (10% done):
-Get basic art and all important object coded
+Get basic art and all important objects coded
 
 Phase 2:
 Get better art and try to make the game more compatible with Andriod
