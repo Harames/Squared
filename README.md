@@ -1,0 +1,16 @@
+# Squared
+Port my game over to GM:S
+I am porting this http://pkmninja.itch.io/squared from Game Maker 7 to Game Maker Studio Professional.
+I am also hoping to have andriod support.
+
+Until I finish porting all of the old code, please don't pull requests.
+I would greatly appreciate your help with art and code once I finish porting everything.
+
+Phase 1 (10% done):
+Get basic art and all important object coded
+
+Phase 2:
+Get better art and try to make the game more compatible with Andriod
+
+Phase 3:
+Finish Andriod optimization
