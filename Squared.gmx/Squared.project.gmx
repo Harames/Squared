@@ -27,6 +27,7 @@
     <objects name="Blocks">
       <object>objects\obj_player</object>
       <object>objects\obj_block</object>
+      <object>objects\obj_enemy</object>
     </objects>
   </objects>
   <rooms name="rooms">
