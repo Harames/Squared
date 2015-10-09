@@ -33,6 +33,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_difficulty</room>
+    <room>rooms\room_survival</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
