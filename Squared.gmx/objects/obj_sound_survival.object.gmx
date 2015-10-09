@@ -2,70 +2,34 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>211</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>for(j = 0; j &lt; 15; j += 1) {
-    for(i = 0; i &lt; 20; i += 1) {
-        isEmpty = position_empty((i * 32) + 16, (j * 32) + 16);
-        if(isEmpty == true) {
-            exit;
-        }
-    }
-    if(isEmpty == false) {
-        room_goto(room_end);
-    }
-}
-</string>
+            <kind>6</kind>
+            <sound>snd_survival</sound>
           </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
           <argument>
-            <kind>1</kind>
-            <string>if(instance_number(obj_player) == 0) {
-    posx = floor(random(20))*32;
-    posy = floor(random(15))*32;
-
-    locate = instance_position(posx, posy, all);
-    if(locate = noone) {
-        instance_create(posx, posy, choose(obj_player));
-    }
-}
-</string>
+            <kind>3</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>

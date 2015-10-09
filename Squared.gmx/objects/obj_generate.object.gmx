@@ -37,11 +37,11 @@
     alarm[1] = 60;
     alarm[2] = 150;
     
-} else if room == room_timed {
-    alarm[0] = 15;
-    alarm[1] = 30;
-    alarm[2] = 60;
-}
+}// else if room == room_timed {
+   // alarm[0] = 15;
+    //alarm[1] = 30;
+    //alarm[2] = 60;
+//}
 </string>
           </argument>
         </arguments>
@@ -81,9 +81,9 @@ if room == room_survival{
     }
 }
 //Reset the Alarm for timed mode
-if room == room_timed{
-    alarm[2] = 60;
-}
+//if room == room_timed{
+  //  alarm[2] = 60;
+//}
 </string>
           </argument>
         </arguments>
@@ -108,19 +108,19 @@ if room == room_timed{
             <kind>1</kind>
             <string>///Generate the x-launcher and bombs
 //Get X and Y coords then check if something is there
-posx = floor(random(20))*32;
-posy = floor(random(15))*32;
-locate = instance_position(posx, posy, all);
+//posx = floor(random(20))*32;
+//posy = floor(random(15))*32;
+//locate = instance_position(posx, posy, all);
 //If nothing is there, create either x-launcehr or bomb
-if(locate = noone) {
-    instance_create(posx, posy, choose(obj_xlauncher,obj_bomb));
-}
+//if(locate = noone) {
+  //  instance_create(posx, posy, choose(obj_xlauncher,obj_bomb));
+//}
 //Reset the Alarm for survival and timed mode    
-if room == room_survival{    
-    alarm[1] = 120;
-} else if room == room_timed{
-    alarm[1] = 60;
-}
+//if room == room_survival{    
+  //  alarm[1] = 120;
+//} else if room == room_timed{
+  //  alarm[1] = 60;
+//}
 </string>
           </argument>
         </arguments>
@@ -163,9 +163,9 @@ if room == room_survival {
     }
 }
 //Reset the Alarm in timed mode
-if room == room_timed {
-    alarm[0] = 30;
-}
+//if room == room_timed {
+  //  alarm[0] = 30;
+//}
 </string>
           </argument>
         </arguments>
