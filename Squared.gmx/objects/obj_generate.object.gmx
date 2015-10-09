@@ -154,7 +154,7 @@ if(locate = noone) {
 }
 //Reset the Alarm in survival mode
 if room == room_survival {
-    if global.casual == treu {
+    if global.casual == true {
         alarm[0] = 45;
     } else if global.moderate == true {
         alarm[0] = 30;
