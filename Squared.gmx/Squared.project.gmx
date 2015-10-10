@@ -34,6 +34,7 @@
   <rooms name="rooms">
     <room>rooms\room_difficulty</room>
     <room>rooms\room_survival</room>
+    <room>rooms\room_end</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
