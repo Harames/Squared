@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
+global.casual = false;
+global.moderate = false;
+global.hard = false;
 </string>
           </argument>
         </arguments>
@@ -49,14 +52,14 @@
           <argument>
             <kind>1</kind>
             <string>room_goto_next()
-if image_index = 0{
-    global.casual = true
+if image_index == 0 {
+    global.casual = true;
 }
-if image_index = 1{
-    global.moderate = true
+if image_index == 1 {
+    global.moderate = true;
 }
-if image_index = 2{
-    global.hard = true
+if image_index == 2 {
+    global.hard = true;
 }
 </string>
           </argument>
