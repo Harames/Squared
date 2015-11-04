@@ -8,7 +8,6 @@ I would greatly appreciate your help with art and code once I finish porting eve
 Phase 1 (15% done):
 Get basic art and all important objects coded
 (I have just finished survival mode, it now works. Now to add power-up objects and timed mode.)
-
 Phase 2:
 Get better art and try to make the game more compatible with Andriod
 
