@@ -1,4 +1,7 @@
 # Squared
+
+Currently ceased devolopment, probably won't resume, ever
+
 I am porting this http://pkmninja.itch.io/squared from Game Maker 7 to Game Maker Studio Professional.
 I am also hoping to have andriod support.
 
